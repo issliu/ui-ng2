@@ -18,26 +18,26 @@ export class ComponentsHelper {
                        private injector: Injector) {
     }
 
+    // 获取 Document 对象
     public getDocument(): any {
         return this.injector.get(DOCUMENT);
     }
 
     /**
-     * In some cases, like using ngUpgrate,
-     * you need to explicitly set view container ref
+     * 在某些情况下，例如 ngUpgrade, 需要显式设置 ViewContainerRef，
      * to made this method working you need to add:
      * ```typescript
      *  @Component({
-   *   selector: 'my-app',
-   *   ...
-   *   })
+     *   selector: 'my-app',
+     *   ...
+     *   })
      *  export class MyApp {
-   *    constructor(componentsHelper:ComponentsHelper, viewContainerRef: ViewContainerRef) {
-   *        // A Default view container ref, usually the app root container ref.
-   *        // Has to be set manually until we can find a way to get it automatically.
-   *        componentsHelper.setRootViewContainerRef(viewContainerRef)
-   *      }
-   *  }
+     *    constructor(componentsHelper:ComponentsHelper, viewContainerRef: ViewContainerRef) {
+     *        // A Default view container ref, usually the app root container ref.
+     *        // Has to be set manually until we can find a way to get it automatically.
+     *        componentsHelper.setRootViewContainerRef(viewContainerRef)
+     *      }
+     *  }
      * ```
      */
     public setRootViewContainerRef(value: ViewContainerRef): void {
@@ -45,6 +45,7 @@ export class ComponentsHelper {
     }
 
     /**
+     * 获取根组件的 ViewContainerRef
      * This is a name conventional class to get application root view component ref
      * @returns {ViewContainerRef} - application root view component ref
      */
@@ -105,9 +106,7 @@ export class ComponentsHelper {
      * @param options - instance of options
      * @returns {ComponentRef<T>} - returns ComponentRef<T>
      */
-    public appendNextToRoot<T>(ComponentClass: Type<T>,
-                               ComponentOptionsClass: any,
-                               options: any): ComponentRef<T> {
+    public appendNextToRoot<T>( ComponentClass: Type<T>, ComponentOptionsClass: any, options: any ): ComponentRef<T> {
         let location = this.getRootViewContainerRef();
         let providers = ReflectiveInjector.resolve([
             {provide: ComponentOptionsClass, useValue: options}

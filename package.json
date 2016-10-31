@@ -1,0 +1,23 @@
+{
+  "name": "ui-ng2",
+  "version": "0.0.1",
+  "description": "ng2 components library",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liushun8910/ui-ng2.git"
+  },
+  "keywords": [
+    "ng2",
+    "components"
+  ],
+  "author": "issliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liushun8910/ui-ng2/issues"
+  },
+  "homepage": "https://github.com/liushun8910/ui-ng2#readme"
+}

@@ -5,14 +5,15 @@ import { COMPILER_PROVIDERS } from '@angular/compiler';
 import { AppComponent }   from './app.component';
 
 @NgModule({
-    imports:      [
+    imports: [
         BrowserModule
     ],
-    declarations: [ AppComponent],
+    declarations: [AppComponent],
     providers: [
         COMPILER_PROVIDERS // this is an app singleton declaration
     ],
-    bootstrap:    [ AppComponent ]
+    bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule {
+}

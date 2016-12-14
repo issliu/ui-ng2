@@ -1,27 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": true,
-    "noEmitHelpers": true,
-    "noImplicitAny": true,
-    "declaration": false,
-    "skipLibCheck": true,
-    "stripInternal": true,
-    "lib": ["dom", "es6"],
-    "types": [
-      "jasmine",
-      "webpack"
-    ]
-  },
-  "exclude": [
-    "node_modules", "bundles", "dist"
-  ],
-  "files": [
-    "./demo/custom-typings.d.ts"
-  ],
-  "atom": { "rewriteTsconfig": false }
+    "compilerOptions": {
+        "target": "es5",
+        "module": "system",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true
+    }
 }

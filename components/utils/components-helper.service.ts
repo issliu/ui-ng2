@@ -84,9 +84,8 @@ export class ComponentsHelper {
      * @param providers - optional array of providers
      * @returns {ComponentRef<T>} - returns ComponentRef<T>
      */
-    public appendNextToLocation<T>(ComponentClass: Type<T>,
-                                   location: ViewContainerRef,
-                                   providers?: ResolvedReflectiveProvider[]): ComponentRef<T> {
+    public appendNextToLocation<T>( ComponentClass: Type<T>, location: ViewContainerRef,
+                                    providers?: ResolvedReflectiveProvider[] ): ComponentRef<T> {
         let componentFactory = this.componentFactoryResolver.resolveComponentFactory(ComponentClass);
         let parentInjector = location.parentInjector;
         let childInjector: Injector = parentInjector;

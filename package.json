@@ -1,5 +1,5 @@
 {
-  "name": "UI-Ng2",
+  "name": "ui-ng2",
   "version": "0.0.2",
   "description": "AN Angular2 UI kit",
   "contributors": [
@@ -7,25 +7,25 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "2.3.0",
-    "@angular/compiler": "2.3.0",
-    "@angular/compiler-cli": "^2.3.0",
-    "@angular/core": "2.3.0",
-    "@angular/forms": "2.3.0",
-    "@angular/http": "2.3.0",
-    "@angular/platform-browser": "2.3.0",
-    "@angular/platform-browser-dynamic": "2.3.0",
-    "@angular/platform-server": "^2.3.0",
+    "@angular/common": "2.2.1",
+    "@angular/compiler": "2.2.1",
+    "@angular/compiler-cli": "2.2.1",
+    "@angular/core": "2.2.1",
+    "@angular/forms": "2.2.1",
+    "@angular/http": "2.2.1",
+    "@angular/platform-browser": "2.2.1",
+    "@angular/platform-browser-dynamic": "2.2.1",
+    "@angular/platform-server": "2.2.1",
     "@angular/router": "3.2.1",
     "angular2-in-memory-web-api": "0.0.21",
     "core-js": "2.4.1",
-    "lodash": "^4.17.2",
-    "plugin-typescript": "^5.3.1",
+    "lodash": "4.17.2",
+    "plugin-typescript": "5.3.1",
     "reflect-metadata": "0.1.8",
-    "rxjs": "5.0.1",
-    "systemjs": "^0.20.0-alpha.1",
-    "typescript": "^2.1.4",
-    "zone.js": "0.7.2"
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.20.0-alpha.1",
+    "typescript": "2.1.4",
+    "zone.js": "0.6.25"
   },
   "keywords": [
     "ng2 ui"
